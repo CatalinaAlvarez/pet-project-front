@@ -4,12 +4,12 @@ export const answerListOptions = (id="") => {
         {
             getAllByParentId:{
                 method: 'GET',
-                url: `http://localhost:8000/respuestas/parentId/${id}`,
+                url: `https://young-coast-60914.herokuapp.com/respuestas/parentId/${id}`,
                 headers: {'Content-Type': 'application/json'}
                 },
             deleteById:{
                 method: 'DELETE',
-                url: `http://localhost:8000/respuesta/eliminar/${id}`,
+                url: `https://young-coast-60914.herokuapp.com/respuesta/eliminar/${id}`,
                 headers: {'Content-Type': 'application/json'}
             }
         }

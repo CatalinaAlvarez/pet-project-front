@@ -65,7 +65,9 @@ export const Question = ({question}) => {
                     />
                 </div>:
                 <div>
-                    <div>{question.questionBody}</div>
+                    <ReactQuill value={question.questionBody}  
+                    modules={modules}   
+                    readOnly='true'/>
                     <div>{question.category}</div>
                     <div>{question.type}</div>
                     <div>{question.score}</div>

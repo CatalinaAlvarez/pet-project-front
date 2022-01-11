@@ -32,13 +32,14 @@ export const QuestionPage = () =>{
     
     return(
         <div>
-            {question && <div className="question-excerpt">
+            {question && <div className="card container text-center py-5 mt-7">
                 <Question question={question}/>
                 {userState.user && <button className="btn btn-primary px-5 mr-3" onClick={toggleAnswer}>Responder</button>}
                 {userState.user && answering ? <CreateAnswerForm /> : <></>}
             </div>}
             {answerList ? <h1>Respuestas</h1>:<></>}
-            {answerList && answerList.map((a) => <div className="question-excerpt">
+            {answerList && answerList.map((a) => 
+            <div className="card container text-center py-5 mt-7">
                 <Answer key={a.id} answer={a}/>
             </div>)}
         </div>

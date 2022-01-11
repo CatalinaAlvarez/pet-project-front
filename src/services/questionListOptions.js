@@ -4,13 +4,13 @@ export const questionListOptions = (userId="") => {
         {
             getAll:{
                 method: 'GET',
-                url: `http://localhost:8000/preguntas`,
+                url: `https://young-coast-60914.herokuapp.com/preguntas`,
                 headers: {'Content-Type': 'application/json'}
                 },
 
             getAllbyUserId:{
                 method: 'GET',
-                url: `http://localhost:8000/preguntas/usuario/${userId}`,
+                url: `https://young-coast-60914.herokuapp.com/preguntas/usuario/${userId}`,
                 headers: {'Content-Type': 'application/json'}
             }
         }

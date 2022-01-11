@@ -4,13 +4,13 @@ export const questionOptions = (id="", data={}) => {
         {
             getById:{
                 method: 'GET',
-                url: `http://localhost:8000/preguntas/${id}`,
+                url: `https://young-coast-60914.herokuapp.com/preguntas/${id}`,
                 headers: {'Content-Type': 'application/json'}
                 },
 
             create:{
                 method: 'POST',
-                url: `http://localhost:8000/preguntas/crear`,
+                url: `https://young-coast-60914.herokuapp.com/preguntas/crear`,
                 headers: {'Content-Type': 'application/json'},
                 data:data
             }
