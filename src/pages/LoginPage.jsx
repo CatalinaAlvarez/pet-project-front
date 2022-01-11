@@ -103,7 +103,6 @@ export const LoginPage = () => {
                     Log-out
                 </button> :
                 <div>
-                    <div className="container">
                         <form className="mt-5 py-5 px-5" onSubmit={loginWithEmailHandler} >
                             <h1>
                                 Ingresar a preguntas
@@ -144,7 +143,6 @@ export const LoginPage = () => {
                             handleClose={handleClose}
                             handleConfirm={handleConfirm}
                         ></ModalLogin>
-                    </div>
 
                     <button className="btn btn-primary px-5 mr-3" onClick={logInHandler}>
                         Iniciar con google
